@@ -1,8 +1,8 @@
-var bs = require("browser-sync").create();
+const bs = require('browser-sync')
 
 const DEV_SERVER_PORT = 3000
 
-bs.init({
+bs.create().init({
     server: {
         baseDir: './build',
         index: 'index.html',

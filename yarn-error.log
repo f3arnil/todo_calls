@@ -1,0 +1,107 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Aliaksei_Vasilyeu\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Aliaksei_Vasilyeu\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Elm Platform\0.18\bin;C:\Users\Aliaksei_Vasilyeu\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Docker Toolbox;C:\Users\Aliaksei_Vasilyeu\AppData\Local\Yarn\bin;C:\Users\Aliaksei_Vasilyeu\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "DCToDoApp",
+    "version": "1.3.53",
+    "description": "Daily calls todo test app",
+    "main": "index.js",
+    "scripts": {
+      "build-dev": "cross-env NODE_ENV=development webpack --progress --config=webpack/webpack.dev.config.js",
+      "build-dev:watch": "webpack --progress --watch",
+      "serve": "node localhost.server.js",
+      "test": "jest --no-cache"
+    },
+    "jest": {
+      "verbose": true,
+      "moduleNameMapper": {
+        "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+      }
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/f3arnil/todo_calls.git"
+    },
+    "author": "Aliaksei Vasilyeu",
+    "license": "MIT",
+    "dependencies": {
+      "moment": "^2.22.1",
+      "prop-types": "^15.6.1",
+      "react": "^16.3.2",
+      "react-bootstrap": "^0.32.1",
+      "react-dom": "^16.3.2",
+      "react-loader": "^2.4.5",
+      "react-router": "^4.2.0",
+      "react-router-dom": "^4.2.2",
+      "babel-polyfill": "^6.26.0"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.26.3",
+      "babel-eslint": "^8.2.3",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-dual-import": "^1.2.1",
+      "babel-plugin-module-resolver": "^3.1.1",
+      "babel-plugin-syntax-dynamic-import": "^6.18.0",
+      "babel-plugin-transform-es2015-unicode-regex": "^6.24.1",
+      "babel-plugin-transform-object-assign": "^6.22.0",
+      "babel-plugin-transform-react-inline-elements": "^6.22.0",
+      "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-plugin-universal-import": "^2.0.0",
+      "babel-plugin-webpack-alias": "^2.1.2",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-node6-es6": "^11.2.5",
+      "babel-preset-react": "^6.24.1",
+      "babel-preset-stage-0": "^6.24.1",
+      "browser-sync": "^2.24.4",
+      "clean-webpack-plugin": "^0.1.19",
+      "cross-env": "^5.1.4",
+      "css-chunks-html-webpack-plugin": "^0.1.0",
+      "css-loader": "^0.28.11",
+      "es6-promise": "^4.2.4",
+      "eslint": "^4.19.1",
+      "eslint-config-airbnb": "^16.1.0",
+      "eslint-config-standard": "^11.0.0",
+      "eslint-import-resolver-webpack": "^0.9.0",
+      "eslint-loader": "^2.0.0",
+      "eslint-plugin-import": "^2.11.0",
+      "eslint-plugin-jest": "^21.15.1",
+      "eslint-plugin-jsx-a11y": "^6.0.3",
+      "eslint-plugin-promise": "^3.7.0",
+      "eslint-plugin-react": "^7.7.0",
+      "eslint-plugin-standard": "^3.1.0",
+      "extract-css-chunks-webpack-plugin": "^2.0.19",
+      "html-webpack-plugin": "^3.2.0",
+      "jest": "^22.4.3",
+      "mini-css-extract-plugin": "^0.4.0",
+      "script-ext-html-webpack-plugin": "^2.0.1",
+      "style-loader": "^0.21.0",
+      "webpack": "^4.5.0",
+      "webpack-cli": "^2.1.3",
+      "webpack-copyfiles-plugin": "^1.0.1",
+      "webpack-dev-server": "^3.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\projects\private\node_modules\.uws.DELETE\uws_win32_57.node'

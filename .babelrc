@@ -1,0 +1,52 @@
+{
+    "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["> 2% in US"]
+          },
+          "useBuiltIns": true,
+          "loose": true,
+          "modules": false
+        }],
+        "react",
+        "stage-0"
+    ],
+    "plugins": [
+      "universal-import",
+      ["transform-react-remove-prop-types", {
+        "removeImport": true,
+        "ignoreFilenames": ["node_modules"]
+      }]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          ["env",
+            {
+              "targets": {
+                "node": true
+              },
+              "modules": "commonjs"
+            }
+          ],
+          "react",
+          "stage-0",
+          "jest"
+        ],
+        "plugins": [
+          "transform-runtime",
+          ["module-resolver", {
+            "root": ["./"],
+            "alias": {
+              "components":   "./src/components",
+              "containers":   "./src/containers",
+              "pages":        "./src/pages",
+              "helpers":      "./src/helpers",
+              "modules":      "./src/modules"
+            }
+          }]
+        ]
+      }
+    }
+  }
+  
